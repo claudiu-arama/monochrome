@@ -1,0 +1,20 @@
+body {
+  margin: 0 auto;
+}
+
+.cont {
+  width: 100%;  // for mobiles
+  max-width: $container-width;
+  margin: 0 auto;  // centered
+   
+  @include media-breakpoint-up('md') {
+    max-width: 700px;
+  }
+
+  @include media-breakpoint-up('lg') {
+    max-width: 1356px;
+  }
+}
+
+
+

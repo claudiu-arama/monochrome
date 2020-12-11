@@ -1,0 +1,46 @@
+.mid-page-banner {
+  font-family: 'Playfair Display', sans-serif;
+  
+  .promo-banner {
+    height: 175px;
+    overflow: hidden;
+    margin: 32px auto 26px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media-breakpoint-up('md'){
+      height: inherit;
+      margin: 0 auto;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.promo-text {
+
+  .watches-promo-title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+
+    @include media-breakpoint-up ('lg') {
+      font-size: 44px;
+    }
+  }
+
+  .watches-promo-para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 32px;
+
+    @include media-breakpoint-up ('lg') {
+      font-size: 22px;
+      line-height: 43px;
+    }
+  }
+}
+

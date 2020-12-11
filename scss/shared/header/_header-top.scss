@@ -1,0 +1,223 @@
+.header-top {
+
+  .banner-main {
+
+    @include media-breakpoint-up('lg') {
+      background: url(/img/banner-main.png) no-repeat center center;
+      background-size: cover;
+      height: 500px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .commercial-info {
+      text-align: center;
+      padding-bottom: 4px;
+      border-bottom: 1px solid $brand-hr;
+
+      @include media-breakpoint-up('sm') {
+        display: none;
+      }
+
+      a {
+        color: $brand-tertiary;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.header-social {
+  display: none;
+
+  @include media-breakpoint-up('lg') {
+    display: block;
+    margin-top: 43px;
+
+    ul {
+      list-style-type: none;
+      margin-right: 5px;
+
+      li {
+        display: inline-block;
+        margin-right: 30px;
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+.header-contact {
+  display: none;
+
+  @include media-breakpoint-up('lg') {
+    display: block;
+    margin-top: 46px;
+    margin-right: 246px;
+    font-family: 'Playfair Display';
+    
+    a {
+      color: #fff;
+
+    }
+  }
+}
+
+.header-user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  @include media-breakpoint-up('lg') {
+    flex-wrap: nowrap;
+    margin-top: 30px;
+  }
+
+  .logo-type {
+    order: 1;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: -0.5px;
+    font-size: 19px;
+    line-height: 22px;
+    margin: 16px 12px 16px 18px;
+
+    @include media-breakpoint-up('md') {
+      font-size: 24px;
+    }
+
+    @include media-breakpoint-up('lg') {
+      display: none;
+    }
+  }
+
+  .header-user-account {
+    order: 2;
+    margin-right: 35px;
+    margin-bottom: 2px;
+
+    @include media-breakpoint-up('lg') {
+      margin: 0;
+      order: 3;
+      width: 100%;
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        font-size: 22px;
+        margin-right: 24px;
+
+        @include media-breakpoint-up('lg') {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+.header-user-controls {
+  order: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $brand-main;
+  width: 100%;
+  height: 50px;
+
+  @include media-breakpoint-up('lg') {
+    background-color: transparent;
+  
+  }
+
+  a {
+    font-size: 30px;
+    margin-left: 34px;
+    margin-right: 53px;
+    color: #fff;
+
+    @include media-breakpoint-up('lg') {
+      display: none;
+    }
+  }
+
+  .search {
+    position: relative;
+    margin-right: 34px;
+    
+    input {
+      height: 30px;
+      width: 227px;
+      border: 0.2px solid #fff;
+      background-color: $brand-main;
+      color: #fff;
+      opacity: 60%;
+      padding-left: 4px;
+      
+      @include media-breakpoint-up('lg') {
+        color: $brand-main;
+        height: 41px;
+        width: 254px;
+        border: 1px solid $brand-hr;
+        background-color: transparent;
+        padding-left: 40px;
+      }
+
+    
+      &::placeholder {
+        background-color: $brand-main;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-size: 10px;
+        opacity: 60%;
+        position: relative;
+        top: -3px;
+
+        @include media-breakpoint-up('lg') {
+          background-color: transparent;
+          opacity: 100%;
+          color: #000;
+          font-size: 15px;
+          text-transform: capitalize;
+          top: 0px;
+          font-style: normal;
+        }
+      }
+    }
+
+    button {
+      position: absolute;
+      right: 5px;
+      top: 2px;
+      border: none;
+      padding: 0 10px;
+
+      @include media-breakpoint-up('lg') {
+        top: 12px;
+        left: 2px;
+        background-color: transparent;
+        color: $brand-main;
+      }
+
+      i {
+        font-size: 11px;
+        opacity: 72%;
+
+        @include media-breakpoint-up('lg') {
+          font-size: 22px;
+          opacity: 100%;
+
+        }
+      }
+    }
+  }
+}

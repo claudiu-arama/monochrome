@@ -1,0 +1,48 @@
+.catalogue-preview {
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif;
+
+  .capitalized-title {
+    text-transform: uppercase;
+  }
+
+  .view-all {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: lowercase;
+    line-height: 14px;
+    padding: 9px 20px;
+    border: 1px solid $brand-main;
+    border-radius: 0;
+
+    @include media-breakpoint-up('lg') {
+      font-size: 22px;
+      line-height: 27px;
+      padding: 12px 16px;
+    }
+  }
+
+  .view-all:hover {
+    background-color: $brand-main;
+    color: #fff;
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+  }
+
+  h1 {
+    padding-top: 12px;
+    margin: 0 auto 10px auto;
+    font-weight: 700;
+    font-size: 18px;
+    border-top: 1px solid $brand-hr;
+    line-height: 24px;
+
+    @include media-breakpoint-up('lg') {
+      font-size: 35px;
+      font-weight: 700;
+    }
+  }
+
+}
+
+
